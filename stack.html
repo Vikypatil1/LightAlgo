@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stack</title>
+  <link rel="stylesheet" href="stack/stack.css">
+</head>
+<body>
+  <section>
+    <div class="container">
+      <div class="create-stack">
+        <a href="more.html" id="home">Home</a>
+      </div>
+      <div class="create-stack">
+        <button class="action-button" id="create_stack">Create Stack</button>
+      </div>
+      <div class="stack d-none" id="stack">
+        <div class="stack-controls">
+          <div class="stack-add-block d-flex justify-content-between">
+            <input type="text" class="stack-add" id="node_value" placeholder="Add something to stack">
+            <button class="stack-add-btn action-button" id="push">Push()</button>
+          </div>
+          <div class="d-flex justify-content-between align-items-end">
+            <div class="info">
+              <b>Stack Length: </b>
+              <b id="stack_length"></b>
+            </div>
+            <button class="pop action-button" id="pop">Pop()</button>
+          </div>
+        </div>
+        <div class="stack-items" id="stack_items">
+          <div class="no-nodes" id="for_empty">Empty</div>
+        </div>
+        <div id="output" class="output"></div>
+      </div>
+    </div>
+  </section>
+  <script src="stack/stack.js"></script>
+</body>
+</html>
